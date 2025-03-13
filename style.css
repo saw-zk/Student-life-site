@@ -1,13 +1,14 @@
-/* 全体のスタイルをリセット */
-*{
+/* 全体の基本スタイル */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-/*     front-family: sans-serif;
- */}
+    background-color: #f4f4f4;
+}
 
-/* ヘッダーのデザイン */
-header{
+/* ヘッダー */
+header {
     background-color: #0073e6;
     color: white;
     padding: 15px;
@@ -15,72 +16,46 @@ header{
 }
 
 nav ul {
-    background-color: #0073e6;
-    padding: 10px;
-    text-align: center;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    transition: background 0.3s;
+    font-size: 18px;
 }
-
-nav ul li a:hover {
-    background: #005bb5;
-    border-radius: 5px;
-}
-
 
 /* メインコンテンツ */
-main{
+main {
     padding: 20px;
     text-align: center;
-};
-.welcome{
-    background-color: f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top: 20px;
 }
 
-/* フッター */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
+/* カテゴリーリンク */
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
     margin-top: 20px;
-}
-
-/* ナビゲーションのアクティブ表示 */
-nav ul li a.active {
-    font-weight: bold;
-    border-bottom: 2px solid white;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: #0073e6;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background 0.3s;
 }
 
 .button:hover {
     background: #005bb5;
-}
-
-body {
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.6;
 }
