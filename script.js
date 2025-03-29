@@ -15,3 +15,30 @@ document.querySelectorAll("nav ul li a").forEach(link => {
         this.classList.add("active");
     });
 });
+
+// スクロールアニメーション
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeElems = document.querySelectorAll(".fade-in");
+
+    const onScroll = () => {
+        fadeElems.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.classList.add("show");
+            }
+        });
+    };
+
+    window.addEventListener("scroll", onScroll);
+    onScroll(); // ページ読み込み時にもチェック
+});
+
+// ハンバーガーメニュー切り替え
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+});
