@@ -175,3 +175,21 @@ footer {
     margin-top: 20px;
     font-weight: bold;
 }
+
+/* 投稿一覧表示用スタイル */
+.post-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .post-item h2 {
+    margin-top: 0;
+  }
+  
+  .post-item small {
+    color: #666;
+  }
+  
