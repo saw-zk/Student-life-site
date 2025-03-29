@@ -1,195 +1,192 @@
-/* 全体のスタイル */
-body {
+/* ===== 共通スタイル ===== */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
     color: #333;
-}
-
-/* ヘッダー */
-header {
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* ===== ヘッダー ===== */
+  header {
     background-color: #0073e6;
     color: white;
-    padding: 15px;
+    padding: 15px 20px;
     text-align: center;
-}
-
-header h1 {
+    position: relative;
+  }
+  
+  header h1 {
     margin: 0;
-    font-size: 24px;
-}
-
-/* h1をクリック可能に */
-header h1 a {
+    font-size: 28px;
+  }
+  
+  header h1 a {
     color: white;
-    text-decoration: none;
     transition: opacity 0.3s;
-}
-
-header h1 a:hover {
+  }
+  
+  header h1 a:hover {
     opacity: 0.7;
-}
-
-/* ナビゲーション */
-nav ul {
+  }
+  
+  /* ===== ナビゲーション ===== */
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    display: block;
     padding: 10px 15px;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #005bb5;
+    font-size: 18px;
+    color: white;
     border-radius: 5px;
-}
-
-/* メインコンテンツ */
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* 各セクション */
-section {
-    margin-bottom: 30px;
-}
-
-/* ボタンデザイン */
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #0073e6;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
     transition: background 0.3s;
-}
-
-.button:hover {
-    background: #005bb5;
-}
-
-/* フッター */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.fade-in{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-in-out;
-}
-.fade-in.show{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ハンバーガーボタン */
-.menu-button {
+  }
+  
+  nav ul li a:hover {
+    background-color: #005bb5;
+  }
+  
+  /* ===== ハンバーガーメニュー（スマホ） ===== */
+  .menu-button {
     display: none;
-    font-size: 24px;
-    background: none;
-    color: white;
-    border: none;
     position: absolute;
     top: 15px;
     right: 20px;
-}
-
-/* ナビの表示切替（スマホ） */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #0073e6;
-        padding: 10px;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .menu-button {
-        display: block;
-    }
-}
-
-/* 投稿フォーム用スタイル */
-#postForm {
-    max-width: 600px;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* ===== メイン ===== */
+  main {
+    max-width: 900px;
     margin: 30px auto;
-    background: #fff;
     padding: 20px;
+  }
+  
+  /* ===== セクション ===== */
+  section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* ===== ボタン ===== */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    font-weight: bold;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#postForm input,
-#postForm textarea {
-    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+  }
+  
+  /* ===== 入力フォーム用 ===== */
+  input, textarea {
+    font-size: 16px;
     padding: 10px;
     margin: 10px 0;
-    font-size: 16px;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-#postForm button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background: #0073e6;
+  }
+  
+  /* ===== フッター ===== */
+  footer {
+    background-color: #222;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#postForm button:hover {
-    background: #005bb5;
-}
-
-#postResult {
     text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-/* 投稿一覧表示用スタイル */
-.post-item {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-top: 40px;
   }
   
-  .post-item h2 {
-    margin-top: 0;
+  /* ===== フェードインアニメーション ===== */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
   }
   
-  .post-item small {
-    color: #666;
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ===== スマホ向けスタイル（レスポンシブ） ===== */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #0073e6;
+      margin-top: 10px;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    main {
+      padding: 15px;
+    }
+  
+    .button {
+      width: 100%;
+      text-align: center;
+    }
   }
   

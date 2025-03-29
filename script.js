@@ -1,10 +1,10 @@
-// スクロール時にヘッダーの背景色を変更
+// ヘッダーの背景色をスクロールで変える
 window.addEventListener("scroll", function () {
     let header = document.querySelector("header");
-    if (window.scrollY > 50) { /* 画面を50px以上スクロールしたら背景色を変更 */
-        header.style.backgroundColor = "#005bb5"; // 濃い青に変化
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = "#005bb5";
     } else {
-        header.style.backgroundColor = "#0073e6"; // 元の色に戻す
+        header.style.backgroundColor = "#0073e6";
     }
 });
 
@@ -16,8 +16,9 @@ document.querySelectorAll("nav ul li a").forEach(link => {
     });
 });
 
-// スクロールアニメーション
+// DOMが読み込まれた後に以下の処理を実行
 document.addEventListener("DOMContentLoaded", () => {
+    // スクロールアニメーション
     const fadeElems = document.querySelectorAll(".fade-in");
 
     const onScroll = () => {
@@ -30,15 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     window.addEventListener("scroll", onScroll);
-    onScroll(); // ページ読み込み時にもチェック
-});
+    onScroll(); // 初回チェック
 
-// ハンバーガーメニュー切り替え
-document.addEventListener("DOMContentLoaded", () => {
+    // ハンバーガーメニュー切り替え
     const menuBtn = document.getElementById("menu-toggle");
     const navMenu = document.querySelector("nav ul");
 
-    menuBtn.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
+    if (menuBtn && navMenu) {
+        menuBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    }
 });
