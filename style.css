@@ -17,6 +17,9 @@
     text-decoration: none;
     color: inherit;
   }
+  b {
+    color: #0073e6;
+  }
   
   /* ===== ヘッダー ===== */
   header {

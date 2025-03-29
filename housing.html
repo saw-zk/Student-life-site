@@ -1,40 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お役立ち情報 - 学生生活ナビ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>住まい・寮 | 長岡技大生活ガイド</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <button class="menu-button" id="menu-toggle">☰</button>
-        <h1><a href="index.html">長岡技術科学大学 生活ガイド</a></h1>
-        <nav>
-            <ul>
-                <li><a href="housing.html">住まい・寮</a></li>
-                <li><a href="transport.html">交通・移動</a></li>
-                <li><a href="food.html">買い物・食事</a></li>
-                <li><a href="jobs.html">アルバイト</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <button class="menu-button" id="menu-toggle">☰</button>
+    <h1><a href="index.html">長岡技術科学大学 生活ガイド</a></h1>
+    <nav>
+      <ul>
+        <li><a href="housing.html" class="active">住まい・寮</a></li>
+        <li><a href="transport.html">交通・移動</a></li>
+        <li><a href="food.html">買い物・食事</a></li>
+        <li><a href="jobs.html">アルバイト</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>大学寮の特徴</h2>
-            <p>寮費が安く、大学に近いので通学が便利です。しかし、部屋の広さやルールに制限があるため、事前に確認しておきましょう。</p>
-        </section>
-        
-        <section>
-            <h2>アパート情報</h2>
-            <p>大学周辺には〇〇不動産などがあり、家賃相場は約3〜5万円です。スーパーや駅に近い物件を選ぶと生活しやすくなります。</p>
-        </section>    
-               
-    </main>
+  <main>
+    <section class="fade-in">
+      <h2>学生の住まい事情</h2>
+      <p>
+        長岡技術科学大学では、多くの学生が大学の学生宿舎または近隣のアパートに住んでいます。
+        初めての一人暮らしにも安心できるように、住まいの選択肢とその特徴をまとめました。
+      </p>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 学生生活ナビ</p>
-    </footer>
+    <section class="fade-in">
+      <h2>学生宿舎について</h2>
+      <p>長岡技術科学大学には、学生宿舎（男子限定）、国際学生宿舎（女子限定）、国際交流会館（主に留学生）、30周年記念学生宿舎（日本人大学院生および留学生）、リンテックハウス（男女混合、国籍関係なし）の5種類の寮があります。 ここでは、学生宿舎について紹介します。</p>
+      <strong>長岡技術科学大学公式サイト：<b><a href="https://www.nagaokaut.ac.jp/student/support/housing/index.html" target="_blank">学生宿舎等</a></b></strong>
+      <ul>
+        <li>家賃：約10,000円（寄宿料 6,000円 + 水道光熱費）</li>
+        <li>設備：机・椅子・ベッド・ロッカー・エアコン（トイレ、キッチン、洗面台、洗濯機、シャワールーム、大浴場は共用）</li>
+        <li>メリット：安い・大学に近い・友達ができやすい・門限なし</li>
+        <li>注意点：入居期間は最大2年（2年以上は入居不可）トイレットペーパーは自分で用意する必要あり・部屋数に限りあり・シャワールーム・大浴場は使用禁止の時間帯あり</li>
+      </ul>
+    </section>
+
+    <section class="fade-in">
+      <h2>アパートについて</h2>
+      長岡技術科学大学には、深才下宿貸間組合という技大生専用のアパートを紹介している組合があります。一般的な不動産屋よりも安価な値段で大学周辺のアパートを紹介しており、大家の方が近所に住んでいる物件も多いので、万が一のことがあっても安心です。
+      <ul>
+        <li>家賃：月額 約15,000円〜40,000円</li>
+        <li>設備：キッチン・バス・トイレ・エアコン（物件により異なる）</li>
+        <li>メリット：学生宿舎よりも自由度が高い</li>
+        <li>注意点：家賃や光熱費の管理が必要・通学手段も考える必要あり</li>
+      </ul>
+    </section>
+
+    <section class="fade-in">
+      <h2>物件探しのタイミング</h2>
+      <p>
+        深才下宿貸間組合が扱っているアパートは以下のスケジュールで入居者が決まります。
+      </p>
+      <table border="1">
+        <tr><td>8月</td><td>学部3年次編入学者、学生宿舎入居者向けに来年3月に空室になる予定の物件を通知</td></tr>
+        <tr><td>9月〜10月</td><td>学生宿舎入居者向けのアパート抽選結果発表</td></tr>
+        <tr><td>翌年2月</td><td>学部1年次入学者（一般入試合格者）受付</td></tr>
+        <tr><td>翌年3月</td><td>学部1年次入学者（一般入試合格者）抽選結果発表</td></tr>
+
+
+      </table>
+    </section>
+
+    <section class="fade-in">
+      <h2>おすすめエリア</h2>
+      <ul>
+        <li>上富岡町・深沢エリア（大学まで自転車15分）</li>
+        <li>長峰町・新産エリア（バス通学に便利）</li>
+        <li>南七日町・希望ヶ丘エリア（スーパー・コンビニが近く生活しやすい）</li>
+      </ul>
+    </section>
+
+    <section class="fade-in">
+      <h2>不動産・情報サイト</h2>
+      <p>
+        上記の他にも、長岡市内の不動産屋でアパートを契約して生活している学生もいます。大学からは離れてしまいますが、南七日町や希望ヶ丘などのスーパーやコンビニが多いエリアに住んでいる人や、宮内駅や長岡駅周辺などの交通の便がいい場所に住んでいる人もいます。
+      </p>
+      おすすめの不動産屋
+      <ul>
+        <li><b><a href="https://www.chintai.net/shop/C01004484/?bk4log=C010044840000000000000180001" target="_blank">北山不動産</a></b></li>
+        <li><b><a href="https://www.living-gallery-chintai.com/list?building_type%5B%5D=2&building_type%5B%5D=1&room_layout_type%5B%5D=OneRoom&room_layout_type%5B%5D=1K&room_layout_type%5B%5D=1SK&room_layout_type%5B%5D=1DK&room_layout_type%5B%5D=1SDK&room_layout_type%5B%5D=1LK&room_layout_type%5B%5D=1SLK&room_layout_type%5B%5D=1LDK&room_layout_type%5B%5D=1SLDK&room_layout_type%5B%5D=2K&room_layout_type%5B%5D=2SK&choume_cd=15202054000,15202184000,15202293000,15202075001,15202075002,15202075003,15202075004,15202075005,15202035001,15202035002,15202035003,15202074001,15202074002,15202021001,15202021002,15202021003,15202021004,15202021005,15202020001,15202020002,15202020003,15202020004,15202020005,15202234001,15202234002,15202234003&choume_name=%E9%95%B7%E5%B2%A1%E6%8A%80%E8%A1%93%E7%A7%91%E5%AD%A6%E5%A4%A7%E5%AD%A6%E8%BF%91%E3%81%8F%E3%81%AE%E7%89%A9%E4%BB%B6" target="_blank">LIVING GALLERY</a></b></li>
+        <li><b><a href="https://suumo.jp/" target="_blank">SUUMO</a></b></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 長岡技術科学大学 生活ガイド</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
