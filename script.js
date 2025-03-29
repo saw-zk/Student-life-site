@@ -42,3 +42,43 @@ document.addEventListener("DOMContentLoaded", () => {
         navMenu.classList.toggle("active");
     });
 });
+
+/* 投稿フォーム用スタイル */
+form#postForm {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #postForm input,
+  #postForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #postForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #postForm button:hover {
+    background: #005bb5;
+  }
+  
+  #postResult {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
