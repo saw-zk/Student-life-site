@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saw-zk.github.io/Student-life-site/sitemap.xml
