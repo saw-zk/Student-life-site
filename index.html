@@ -6,19 +6,46 @@
   <title>長岡技大生活ガイド</title>
   <meta name="description" content="長岡技術科学大学に進学する人のために、学生視点で生活のコツを紹介する情報サイト。寮、交通、買い物、バイトなどの情報を掲載。">
   <meta name="keywords" content="長岡技大, 学生生活, 進学, 新入生, 長岡, 技術科学大学">
-  <meta name="google-site-verification" content="3FCIKq4VbPAiblvvoQTmYpCh5Df07IZ_wsA7bP-sjPI" />  <meta property="og:title" content="長岡技大生活ガイド">
+  <meta name="author" content="長岡技大生活ガイド">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="3FCIKq4VbPAiblvvoQTmYpCh5Df07IZ_wsA7bP-sjPI" />
+  
+  <!-- OGP -->
+  <meta property="og:title" content="長岡技大生活ガイド">
   <meta property="og:description" content="長岡技大に進学する人のための生活ガイド。住まい・交通・買い物・バイト情報を掲載。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://saw-zk.github.io/Student-life-site/index.html">
+  <meta property="og:site_name" content="長岡技大生活ガイド">
   <!-- <meta property="og:image" content="URL_to_your_OGP_image.jpg"> -->
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="長岡技大生活ガイド">
+  <meta name="twitter:description" content="長岡技大に進学する人のための生活ガイド。住まい・交通・買い物・バイト情報を掲載。">
+  
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "長岡技大生活ガイド",
+    "description": "長岡技術科学大学に進学する人のための生活情報サイト",
+    "url": "https://saw-zk.github.io/Student-life-site/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "長岡技大生活ガイド"
+    }
+  }
+  </script>
 
   <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://saw-zk.github.io/Student-life-site/index.html">
 </head>
 <body>
-    <header>
-        <button class="menu-button" id="menu-toggle">☰</button>
+    <header role="banner">
+        <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-label="メニューを開く">☰</button>
         <h1><a href="index.html">長岡技術科学大学 生活ガイド</a></h1>
-        <nav>
+        <nav role="navigation" aria-label="メインナビゲーション">
             <ul>
                 <li><a href="housing.html">住まい・寮</a></li>
                 <li><a href="transport.html">交通・移動</a></li>
@@ -28,25 +55,41 @@
         </nav>
     </header>
 
-    <main>
-        <section class="fade-in">
+    <main role="main">
+        <article class="fade-in">
             <h2>このサイトについて</h2>
             <p>
-                長岡技術科学大学に進学する人のために、生活に役立つ情報をまとめたサイトです。 
-                <br>寮・アパート情報、移動手段、食事、アルバイトなどの情報を発信します。</p>
+                長岡技術科学大学に進学する人のために、生活に役立つ情報をまとめたサイトです。<br>
+                寮・アパート情報、移動手段、食事、アルバイトなどの情報を発信します。
             </p>
+        </article>
+
+        <section class="fade-in">
+            <h2>サイトの使い方</h2>
+            <p>上部のナビゲーションメニューから、知りたい情報のページにアクセスできます。</p>
+            <ul>
+                <li><strong>住まい・寮</strong>：学生宿舎やアパート情報</li>
+                <li><strong>交通・移動</strong>：通学方法やバス時刻表</li>
+                <li><strong>買い物・食事</strong>：周辺のお店や節約術</li>
+                <li><strong>アルバイト</strong>：人気のバイトや探し方</li>
+            </ul>
         </section>
 
+        <section class="fade-in">
+            <h2>最終更新日</h2>
+            <p><time datetime="2025-06-14">2025年6月14日</time></p>
+        </section>
         
         <section class="fade-in">
             <h2>お問い合わせ</h2>
-            <p>ご不明点や追加して欲しいこと、情報提供などは以下のお問い合わせフォームまでお願いいたします</p>
-            <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRGi0BlUm4kr0Tx38r8tKm3aeVZ8g02gu9h416uG3YtST8YA/viewform?usp=header">お問い合わせフォーム</a></b>
+            <p>ご不明点や追加して欲しいこと、情報提供などは以下のお問い合わせフォームまでお願いいたします。</p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRGi0BlUm4kr0Tx38r8tKm3aeVZ8g02gu9h416uG3YtST8YA/viewform?usp=header" class="button" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></p>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 長岡技術科学大学 生活ガイド</p>
+        <p><small>このサイトは学生による非公式サイトです。</small></p>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <button class="menu-button" id="menu-toggle">☰</button>
+  <header role="banner">
+    <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-label="メニューを開く">☰</button>
     <h1><a href="index.html">長岡技術科学大学 生活ガイド</a></h1>
-    <nav>
+    <nav role="navigation" aria-label="メインナビゲーション">
       <ul>
         <li><a href="housing.html" class="active">住まい・寮</a></li>
         <li><a href="transport.html">交通・移動</a></li>
@@ -28,14 +28,21 @@
     </nav>
   </header>
 
-  <main>
-    <section class="fade-in">
+  <main role="main">
+    <nav aria-label="パンくずリスト" class="breadcrumb fade-in">
+      <ol>
+        <li><a href="index.html">ホーム</a></li>
+        <li aria-current="page">住まい・寮</li>
+      </ol>
+    </nav>
+
+    <article class="fade-in">
       <h2>学生の住まい事情</h2>
       <p>
         長岡技術科学大学では、多くの学生が大学の学生宿舎または近隣のアパートに住んでいます。
         初めての一人暮らしにも安心できるように、住まいの選択肢とその特徴をまとめました。
       </p>
-    </section>
+    </article>
 
     <section class="fade-in">
       <h2>学生宿舎について</h2>
@@ -66,14 +73,35 @@
       <p>
         深才下宿貸間組合が扱っているアパートは以下のスケジュールで入居者が決まります。
       </p>
-      <table border="1">
-        <tr><td>8月</td><td>学部3年次編入学者、学生宿舎入居者向けに来年3月に空室になる予定の物件を通知</td></tr>
-        <tr><td>9月〜10月</td><td>学生宿舎入居者向けのアパート抽選結果発表</td></tr>
-        <tr><td>翌年2月</td><td>学部1年次入学者（一般入試合格者）受付</td></tr>
-        <tr><td>翌年3月</td><td>学部1年次入学者（一般入試合格者）抽選結果発表</td></tr>
-
-
-      </table>
+      <div class="table-wrapper">
+        <table>
+          <caption>深才下宿貸間組合 入居スケジュール</caption>
+          <thead>
+            <tr>
+              <th scope="col">時期</th>
+              <th scope="col">内容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">8月</th>
+              <td>学部3年次編入学者、学生宿舎入居者向けに来年3月に空室になる予定の物件を通知</td>
+            </tr>
+            <tr>
+              <th scope="row">9月〜10月</th>
+              <td>学生宿舎入居者向けのアパート抽選結果発表</td>
+            </tr>
+            <tr>
+              <th scope="row">翌年2月</th>
+              <td>学部1年次入学者（一般入試合格者）受付</td>
+            </tr>
+            <tr>
+              <th scope="row">翌年3月</th>
+              <td>学部1年次入学者（一般入試合格者）抽選結果発表</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="fade-in">
@@ -99,14 +127,20 @@
     </section>
 
     <section class="fade-in">
+      <h2>最終更新日</h2>
+      <p><time datetime="2025-06-14">2025年6月14日</time></p>
+    </section>
+
+    <section class="fade-in">
       <h2>お問い合わせ</h2>
-      <p>ご不明点や追加して欲しいこと、情報提供などは以下のお問い合わせフォームまでお願いいたします</p>
-      <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRGi0BlUm4kr0Tx38r8tKm3aeVZ8g02gu9h416uG3YtST8YA/viewform?usp=header">お問い合わせフォーム</a></b>
-  </section>
+      <p>ご不明点や追加して欲しいこと、情報提供などは以下のお問い合わせフォームまでお願いいたします。</p>
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRGi0BlUm4kr0Tx38r8tKm3aeVZ8g02gu9h416uG3YtST8YA/viewform?usp=header" class="button" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></p>
+    </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2025 長岡技術科学大学 生活ガイド</p>
+    <p><small>このサイトは学生による非公式サイトです。</small></p>
   </footer>
 
   <script src="script.js"></script>
